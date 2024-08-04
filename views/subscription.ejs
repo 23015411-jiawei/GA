@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Plans</title>
+    <link rel="stylesheet" href="CSS/stylesss.css">
+    <script>
+        function confirmPurchase(plan) {
+            const confirmation = confirm(`Are you sure you want to purchase the ${plan} plan?`);
+            if (confirmation) {
+                window.location.href = `/purchase/${plan.toLowerCase()}`;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Wardiere Inc.</div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/subscription">Subscription</a></li>
+                    <li><a href="/wallet">Wallet</a></li>
+                </ul>
+            </nav>
+            <a href="/topup"><button id="topUpButton">Top Up</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="pricing-section">
+            <div class="pricing-card">
+                <h2>Basic</h2>
+                <p class="price">$20</p>
+                <p>per user/month</p>
+                <ul>
+                    <li>Secure identity verification</li>
+                    <li>Encrypted storage of personal data</li>
+                    <li>Multi-factor authentication</li>
+                    <li>Basic customer support</li>
+                </ul>
+                <button class="get-plan" onclick="confirmPurchase('Basic')">Get Basic</button>
+            </div>
+            <div class="pricing-card best-deal">
+                <h2>Standard<p class="note">*best deal.</p></h2>
+                <p class="price">$50</p>
+                <p>per user/month</p>
+                <ul>
+                    <li>All features of Basic plan</li>
+                    <li>Access control management*</li>
+                    <li>Priority Support</li>
+                </ul>
+                <p class="note">*allowing users to grant and revoke data access.</p>
+                <button class="get-plan" onclick="confirmPurchase('Standard')">Get Standard</button>
+            </div>
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <p class="price">$100</p>
+                <p>per user/month</p>
+                <ul>
+                    <li>All features of Standard plan</li>
+                    <li>Advanced identity verification</li>
+                    <li>Continuous monitoring of suspicious activity</li>
+                    <li>Dedicated account manager</li>
+                </ul>
+                <button class="get-plan" onclick="confirmPurchase('Premium')">Get Premium</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+

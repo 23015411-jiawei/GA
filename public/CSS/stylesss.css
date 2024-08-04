@@ -1,0 +1,131 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c3c;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#topUpButton {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#topUpButton:hover {
+    background-color: #ff4c3b;
+}
+
+/* Pricing section styles */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #1c1c3c;
+}
+
+.pricing-card {
+    background-color: #3c3c7c;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 15px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.pricing-card.best-deal {
+    background-color: #5c5c9c;
+    border: 2px solid #ff6f61;
+}
+
+.pricing-card h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.pricing-card .price {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.pricing-card p {
+    margin-bottom: 20px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.pricing-card ul li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ff6f61;
+}
+
+.get-plan {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.get-plan:hover {
+    background-color: #ff4c3b;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 900px) {
+    .pricing-section {
+        flex-direction: column;
+    }
+
+    .pricing-card {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="/CSS/stylesssss.css">
+    <script>
+        function toggleTransactions() {
+            const transactionsSection = document.getElementById('transactionsSection');
+            transactionsSection.style.display = transactionsSection.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">Investment Inc.</div>
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/subscription">Subscription</a></li>
+                    <li><a href="/wallet">Wallet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="wallet-section">
+            <div class="wallet-card">
+                <div class="wallet-icon">
+                    <img src="/images/wallet.png" alt="Wallet Icon">
+                </div>
+                <div class="balance">
+                    BALANCE: $<%= balance.toFixed(2) %>
+                </div>
+                <div class="buttons">
+                    <button class="wallet-button" onclick="document.getElementById('topupForm').style.display='block'">TOP UP</button>
+                    <button class="wallet-button" onclick="document.getElementById('transferForm').style.display='block'">TRANSFER</button>
+                    <button class="wallet-button" onclick="toggleTransactions()">TRANSACTION</button>
+                </div>
+            </div>
+
+            <!-- Top Up Form -->
+            <div id="topupForm" class="modal">
+                <div class="modal-content">
+                    <span onclick="document.getElementById('topupForm').style.display='none'" class="close">&times;</span>
+                    <form action="/topup" method="POST">
+                        <label for="amount">Top Up Amount:</label>
+                        <input type="number" id="amount" name="amount" min="0" step="0.01" required>
+                        <button type="submit">Top Up</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Transfer Form -->
+            <div id="transferForm" class="modal">
+                <div class="modal-content">
+                    <span onclick="document.getElementById('transferForm').style.display='none'" class="close">&times;</span>
+                    <form action="/transfer" method="POST">
+                        <label for="transferAmount">Transfer Amount:</label>
+                        <input type="number" id="transferAmount" name="amount" min="0" step="0.01" required>
+                        <button type="submit">Transfer</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Transaction History -->
+            <div id="transactionsSection" class="transactions" style="display: none;">
+                <h2>Transactions</h2>
+                <ul>
+                    <% transactions.forEach(function(transaction) { %>
+                        <li><%= transaction.date %> - <%= transaction.type %> - $<%= parseFloat(transaction.amount).toFixed(2) %> <%= transaction.plan ? '- ' + transaction.plan : '' %></li>
+                    <% }); %>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

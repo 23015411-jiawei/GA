@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #333;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .create-account {
+    background: #a084d3;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(to right, #1e1e1e, #2e2e2e);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.about-us {
+    background: linear-gradient(to right, #2e2e2e, #1e1e1e);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    color: #a084d3;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background: #1c1c1c;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .btn {
+    padding: 0.5em 1em;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+header .btn:hover {
+    background: #fff;
+    color: #1c1c1c;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2b2b2b, #3e2b7b, #2b2b2b);
+    text-align: center;
+}
+
+.hero .hero-content {
+    max-width: 800px;
+    padding: 2em;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.hero .btn {
+    padding: 1em 2em;
+    border: none;
+    background: #fff;
+    color: #1c1c1c;
+    font-size: 1em;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #f0f0f0;
+}
+
+/* public/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cdc1c1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-section {
+    background: #c64b4b;
+    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.form-section h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button.btn {
+    width: 94.5%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.btn:hover {
+    background-color: #555;
+}
+
