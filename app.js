@@ -7,10 +7,10 @@ const bcrypt = require('bcrypt'); // for password hashing
 
 // MySQL Connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'c369_ga'
+    host: 'db4free.net',
+    user: 'jiaweii',
+    password: 'Mrwong123',
+    database: 'c368_ga'
 });
 
 db.connect((err) => {
