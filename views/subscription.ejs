@@ -9,7 +9,13 @@
         function confirmPurchase(plan) {
             const confirmation = confirm(`Are you sure you want to purchase the ${plan} plan?`);
             if (confirmation) {
-                window.location.href = `/purchase/${plan.toLowerCase()}`;
+                if (plan === 'Basic') {
+                    window.location.href = 'views/subscription-success.html';
+                } else if (plan === 'Standard') {
+                    window.location.href = 'views/subscription-success.html';
+                } else if (plan === 'Premium') {
+                    window.location.href = 'views/subscription-success.html';
+                }
             }
         }
     </script>
