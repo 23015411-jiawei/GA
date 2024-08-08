@@ -59,15 +59,9 @@ app.get('/transaction-history', (req, res) => {
 });
 
 app.get('/subscription-success', (req, res) => {
-    const filePath = path.join(__dirname, 'views', 'subscription-success.ejs');
-    console.log(`Serving file from path: ${filePath}`);
-    res.sendFile(filePath, (err) => {
-        if (err) {
-            console.error('Error sending file:', err);
-            res.status(500).send('Server Error');
-        }
-    });
+    res.sendFile(path.join(__dirname, 'views', 'subscription-success.html'));
 });
+
 
 app.get('/create-account', (req, res) => {
     res.render('createaccount');
