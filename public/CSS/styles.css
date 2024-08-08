@@ -1,3 +1,5 @@
+/* Global styles */
+/* Set the default font, background, and text color for the body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -5,37 +7,47 @@ body {
     color: #fff;
 }
 
+/* Header styles */
+/* Style the header with a dark background and padding */
 header {
     background: #333;
     padding: 10px 20px;
 }
 
+/* Navbar styles */
+/* Flex container for the navbar, justifying content space-between and aligning items center */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Style the logo with larger font size and bold weight */
 nav .logo {
     font-size: 24px;
     font-weight: bold;
 }
 
+/* Flex container for the list of navigation links, removing default list styling and adding gaps */
 nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
+/* Remove margin for list items */
 nav ul li {
     margin: 0;
 }
 
+/* Style the navigation links to be white and remove underline */
 nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Create Account Button */
+/* Style the create account button with a background color, no border, padding, white text, and cursor pointer */
 nav .create-account {
     background: #a084d3;
     border: none;
@@ -44,17 +56,22 @@ nav .create-account {
     cursor: pointer;
 }
 
+/* Hero Section styles */
+/* Style the hero section with a gradient background, center text alignment, and padding */
 .hero {
     background: linear-gradient(to right, #1e1e1e, #2e2e2e);
     text-align: center;
     padding: 50px 20px;
 }
 
+/* Style the hero section heading */
 .hero h1 {
     font-size: 36px;
     color: #fff;
 }
 
+/* About Us Section styles */
+/* Style the about us section with a gradient background, white text, padding, rounded corners, and center text alignment */
 .about-us {
     background: linear-gradient(to right, #2e2e2e, #1e1e1e);
     color: #fff;
@@ -63,26 +80,33 @@ nav .create-account {
     text-align: center;
 }
 
+/* Style the about us content container, centering it with a maximum width */
 .about-content {
     max-width: 600px;
     margin: 0 auto;
 }
 
+/* Style the about us section heading */
 .about-content h2 {
     color: #a084d3;
 }
 
+/* Style the about us section paragraphs */
 .about-content p {
     font-size: 18px;
     line-height: 1.6;
 }
 
+/* Body styles */
+/* Set the default font and text color for the body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #fff;
 }
 
+/* Header styles */
+/* Flex container for the header, justifying content space-between, aligning items center, and setting background and padding */
 header {
     display: flex;
     justify-content: space-between;
@@ -91,11 +115,13 @@ header {
     background: #1c1c1c;
 }
 
+/* Style the header logo with larger font size and bold weight */
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
 }
 
+/* Flex container for the list of navigation links, removing default list styling and adding gaps */
 header nav ul {
     list-style: none;
     display: flex;
@@ -104,15 +130,19 @@ header nav ul {
     padding: 0;
 }
 
+/* Inline display for list items */
 header nav ul li {
     display: inline;
 }
 
+/* Style the navigation links to be white and remove underline */
 header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Button styles */
+/* Style the buttons with padding, border, white text, no underline, border radius, and transition on hover */
 header .btn {
     padding: 0.5em 1em;
     border: 1px solid #fff;
@@ -122,11 +152,14 @@ header .btn {
     transition: background 0.3s;
 }
 
+/* Change background and text color on hover for buttons */
 header .btn:hover {
     background: #fff;
     color: #1c1c1c;
 }
 
+/* Hero Section styles */
+/* Flex container for the hero section, centering items both horizontally and vertically with a gradient background and center text alignment */
 .hero {
     display: flex;
     justify-content: center;
@@ -136,16 +169,20 @@ header .btn:hover {
     text-align: center;
 }
 
+/* Style the hero content container with maximum width and padding */
 .hero .hero-content {
     max-width: 800px;
     padding: 2em;
 }
 
+/* Style the hero section heading */
 .hero h1 {
     font-size: 2.5em;
     margin-bottom: 1em;
 }
 
+/* Button styles */
+/* Style the hero section button with padding, no border, white background, black text, font size, border radius, no underline, and transition on hover */
 .hero .btn {
     padding: 1em 2em;
     border: none;
@@ -157,11 +194,13 @@ header .btn:hover {
     transition: background 0.3s;
 }
 
+/* Change background color on hover for hero section buttons */
 .hero .btn:hover {
     background: #f0f0f0;
 }
 
-/* public/styles.css */
+/* Global styles */
+/* Set the default font and background color for the body */
 body {
     font-family: Arial, sans-serif;
     background-color: #cdc1c1;
@@ -169,6 +208,8 @@ body {
     padding: 0;
 }
 
+/* Header styles */
+/* Style the header with a dark background, white text, padding, and center text alignment */
 header {
     background-color: #333;
     color: #fff;
@@ -176,25 +217,31 @@ header {
     text-align: center;
 }
 
+/* Style the header logo with larger font size */
 header .logo {
     font-size: 24px;
 }
 
+/* Remove list styling for navigation links and add padding */
 header nav ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* Inline display for list items and add margin */
 header nav ul li {
     display: inline;
     margin: 0 10px;
 }
 
+/* Style the navigation links to be white and remove underline */
 header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Form Section styles */
+/* Style the form section with background color, padding, maximum width, margin, box shadow, and rounded corners */
 .form-section {
     background: #c64b4b;
     padding: 20px;
@@ -204,21 +251,25 @@ header nav ul li a {
     border-radius: 20px;
 }
 
+/* Style the form section heading with bottom margin, font size, and center text alignment */
 .form-section h1 {
     margin-bottom: 20px;
     font-size: 24px;
     text-align: center;
 }
 
+/* Style the form group with bottom margin */
 .form-group {
     margin-bottom: 15px;
 }
 
+/* Style the form group labels with block display and bottom margin */
 .form-group label {
     display: block;
     margin-bottom: 5px;
 }
 
+/* Style the form inputs with width, padding, border, and rounded corners */
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group input[type="password"] {
@@ -228,6 +279,8 @@ header nav ul li a {
     border-radius: 4px;
 }
 
+/* Button styles */
+/* Style the form submit button with width, padding, background color, white text, no border, rounded corners, cursor pointer, and font size */
 button.btn {
     width: 94.5%;
     padding: 10px;
@@ -239,7 +292,9 @@ button.btn {
     font-size: 16px;
 }
 
+/* Change background color on hover for form submit button */
 button.btn:hover {
     background-color: #555;
 }
+
 

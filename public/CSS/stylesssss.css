@@ -1,195 +1,249 @@
 /* General Styles */
+/* Set the default font, background color, text color, and remove margin and padding for the body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #2d2b56;
-    color: #fff;
+    background-color: #2d2b56; /* Dark blue background */
+    color: #fff; /* White text color */
     margin: 0;
     padding: 0;
 }
 
+/* Navbar styles */
+/* Style the navigation bar as a flex container with space between items */
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1e1c3c;
-    padding: 10px 20px;
+    justify-content: space-between; /* Space between logo and navigation items */
+    align-items: center; /* Center items vertically */
+    background-color: #1e1c3c; /* Darker background for the navbar */
+    padding: 10px 20px; /* Padding for the navbar */
 }
 
+/* Logo styles */
+/* Style the logo with a larger font size, bold weight, and a specific color */
 .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff8c00;
+    font-size: 1.5em; /* Size of the logo text */
+    font-weight: bold; /* Bold text */
+    color: #ff8c00; /* Orange color for the logo */
 }
 
+/* Navigation list styles */
+/* Remove default list styling and display as flex */
 .navbar nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Display list items in a row */
     margin: 0;
     padding: 0;
 }
 
+/* Navigation list item styles */
+/* Style each list item in the navigation */
 .navbar nav ul li {
-    margin: 0 10px;
+    margin: 0 10px; /* Margin between navigation items */
 }
 
+/* Navigation link styles */
+/* Style links to be white and remove underline */
 .navbar nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Button styles */
+/* Style the top-up and create account buttons with background color, padding, and rounded corners */
 #topUpButton, #createAccountButton {
-    background-color: #ff8c00;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+    background-color: #ff8c00; /* Orange background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border-radius: 5px; /* Rounded corners */
 }
 
+/* Button hover styles */
+/* Change background color on hover for buttons */
 #topUpButton:hover, #createAccountButton:hover {
-    background-color: #ff6500;
+    background-color: #ff6500; /* Darker orange on hover */
 }
 
+/* Wallet Section styles */
+/* Flex container for the wallet section, oriented vertically */
 .wallet-section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Padding for the wallet section */
 }
 
+/* Wallet Card styles */
+/* Style the wallet card with background color, rounded corners, padding, and shadow */
 .wallet-card {
-    background-color: #602080;
-    border-radius: 20px;
-    padding: 30px;
-    text-align: center;
-    width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    background-color: #602080; /* Dark purple background */
+    border-radius: 20px; /* Rounded corners */
+    padding: 30px; /* Padding for the card */
+    text-align: center; /* Center text inside the card */
+    width: 50%; /* Set width of the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    margin-bottom: 20px; /* Margin below the card */
 }
 
+/* Wallet Icon styles */
+/* Set size for wallet icons */
 .wallet-icon img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Width of the icon */
+    height: 50px; /* Height of the icon */
 }
 
+/* Balance display styles */
+/* Style the balance display with a larger font size and margin */
 .balance {
-    font-size: 2em;
-    margin: 20px 0;
-    color: #ff66cc;
+    font-size: 2em; /* Large font size for balance */
+    margin: 20px 0; /* Margin above and below */
+    color: #ff66cc; /* Pink color for balance */
 }
 
+/* Button container styles */
+/* Flex container for wallet action buttons, centered with spacing */
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
 }
 
+/* Wallet Button styles */
+/* Style the wallet action buttons with background color, padding, and rounded corners */
 .wallet-button {
-    background-color: #ff66cc;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
+    background-color: #ff66cc; /* Pink background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Set font size */
 }
 
+/* Wallet Button hover styles */
+/* Change background color on hover for wallet buttons */
 .wallet-button:hover {
-    background-color: #ff3399;
+    background-color: #ff3399; /* Darker pink on hover */
 }
 
 /* Modal Styles */
+/* Style for the modal overlay */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position for overlay */
+    z-index: 1; /* On top of other content */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scrolling */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
 }
 
+/* Modal content styles */
+/* Style for the content inside the modal */
 .modal-content {
-    background-color: #fff;
-    color: #000;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 10px;
+    background-color: #fff; /* White background for modal content */
+    color: #000; /* Black text color */
+    margin: 15% auto; /* Center modal with top margin */
+    padding: 20px; /* Padding for the content */
+    border: 1px solid #888; /* Light border */
+    width: 80%; /* Width of the modal content */
+    max-width: 500px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
 }
 
+/* Close button styles */
+/* Style the close button in the modal */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Light grey color */
+    float: right; /* Float to the right */
+    font-size: 28px; /* Larger font size */
+    font-weight: bold; /* Bold text */
 }
 
+/* Close button hover styles */
+/* Change color of close button on hover */
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Change to black on hover */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Change cursor to pointer */
 }
 
+/* Form styles */
+/* Style the form as a flex container with vertical layout */
 form {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Stack form elements vertically */
+    gap: 10px; /* Space between form elements */
 }
 
+/* Form label styles */
+/* Style form labels with a larger font size */
 form label {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Larger font for labels */
 }
 
+/* Input styles for number fields */
+/* Style input fields for numbers with padding and border */
 form input[type="number"] {
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 10px; /* Padding inside the input */
+    font-size: 1em; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #ccc; /* Light border */
 }
 
+/* Button styles in forms */
+/* Style the submit button in forms with background color and padding */
 form button {
-    background-color: #ff66cc;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
+    background-color: #ff66cc; /* Pink background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding for button */
+    cursor: pointer; /* Change cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
 }
 
+/* Button hover styles in forms */
+/* Change background color on hover for form buttons */
 form button:hover {
-    background-color: #ff3399;
+    background-color: #ff3399; /* Darker pink on hover */
 }
 
-/* Transactions Section */
+/* Transactions Section styles */
+/* Style for the transactions section */
 .transactions {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
+    width: 80%; /* Width of the transactions container */
+    max-width: 800px; /* Maximum width */
+    margin: 20px auto; /* Center with margin */
 }
 
+/* Transactions section heading styles */
+/* Style the heading for the transactions section */
 .transactions h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Margin below the heading */
 }
 
+/* Transactions list styles */
+/* Remove list styling and padding for the transactions list */
 .transactions ul {
-    list-style: none;
-    padding: 0;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
 }
 
+/* Transactions list item styles */
+/* Style each transaction list item with padding and background */
 .transactions ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    font-size: 1.1em;
-    background-color: #4b3b6b;
-    color: #fff;
+    padding: 10px; /* Padding for each item */
+    border-bottom: 1px solid #ccc; /* Light bottom border */
+    font-size: 1.1em; /* Font size */
+    background-color: #4b3b6b; /* Darker purple background */
+    color: #fff; /* White text color */
 }
+
 
 

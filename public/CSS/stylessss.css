@@ -1,3 +1,5 @@
+/* Global styles */
+/* Set the default font, remove margin and padding, set height to 100%, set background color, text color, and use flexbox to center content */
 body, html {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,6 +12,8 @@ body, html {
     align-items: center;
 }
 
+/* Message Container styles */
+/* Style the container for messages with center text alignment, background color, padding, rounded corners, and a shadow */
 .message-container {
     text-align: center;
     background-color: #1e1e1e;
@@ -18,15 +22,21 @@ body, html {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Heading styles */
+/* Style the heading with a specific font size and bottom margin */
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
 }
 
+/* Paragraph styles */
+/* Style the paragraph with a specific font size */
 p {
     font-size: 1.2em;
 }
 
+/* Home Button styles */
+/* Style the home button with padding, font size, text color, background color, no border, rounded corners, cursor pointer, no text decoration, and top margin */
 .home-button {
     display: inline-block;
     padding: 10px 20px;
@@ -40,6 +50,8 @@ p {
     margin-top: 20px;
 }
 
+/* Home Button Hover styles */
+/* Change background color on hover for the home button */
 .home-button:hover {
     background-color: #0056b3;
 }

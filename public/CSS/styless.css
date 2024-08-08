@@ -1,3 +1,5 @@
+/* Global styles */
+/* Set the default font, background, and text color for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +8,8 @@ body {
     color: white;
 }
 
+/* Header styles */
+/* Style the header with a dark background, padding, and flexbox alignment */
 header {
     background-color: #1E1E1E;
     padding: 1rem;
@@ -14,17 +18,21 @@ header {
     align-items: center;
 }
 
+/* Navbar styles */
+/* Flex container for the navbar, aligning items center */
 nav {
     display: flex;
     align-items: center;
 }
 
+/* Style the logo with larger font size, bold weight, and right margin */
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
     margin-right: 2rem;
 }
 
+/* Flex container for the list of navigation links, removing default list styling and adding gaps */
 nav ul {
     list-style-type: none;
     display: flex;
@@ -33,16 +41,20 @@ nav ul {
     padding: 0;
 }
 
+/* Remove margin for list items */
 nav ul li {
     margin: 0;
 }
 
+/* Style the navigation links to be white, bold, and without underline */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
+/* Create Account Button */
+/* Style the create account button with a white background, black text, border radius, and padding. Moves to the right with margin-left: auto */
 .create-account {
     background-color: white;
     color: black;
@@ -53,6 +65,8 @@ nav ul li a {
     margin-left: auto; /* Ensures the button moves to the right */
 }
 
+/* Main content styles */
+/* Flex container for main content, centering items both horizontally and vertically with a height of 80vh */
 main {
     display: flex;
     justify-content: center;
@@ -60,6 +74,8 @@ main {
     height: 80vh;
 }
 
+/* Wallet Card styles */
+/* Style the wallet card with a purple background, rounded corners, padding, and centered text */
 .wallet-card {
     background-color: #7B3DFF;
     border-radius: 20px;
@@ -67,23 +83,31 @@ main {
     text-align: center;
 }
 
+/* Wallet Icon styles */
+/* Style the wallet icon image with specific width and height */
 .wallet-icon img {
     width: 50px;
     height: 50px;
 }
 
+/* Balance styles */
+/* Style the balance text with larger font size, margin, and magenta color */
 .balance {
     font-size: 1.5rem;
     margin: 1rem 0;
     color: #FF00FF;
 }
 
+/* Actions styles */
+/* Flex container for the action buttons, justifying content with space around and adding top margin */
 .actions {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
 }
 
+/* General button styles for action buttons */
+/* Style the action buttons with a purple background, white text, border radius, padding, cursor pointer, and specific font size */
 .actions button {
     background-color: #7B3DFF;
     color: white;
@@ -94,13 +118,18 @@ main {
     font-size: 1rem;
 }
 
+/* Top-Up Button styles */
+/* Specific style for the top-up button */
 .actions .top-up {
     background-color: #7B3DFF;
 }
 
+/* Transfer Button styles */
+/* Specific style for the transfer button */
 .actions .transfer {
     background-color: #7B3DFF;
 }
+
 
 
 
