@@ -1,4 +1,5 @@
 /* Global styles */
+/* Set the default font and background for the body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -7,6 +8,7 @@ body {
 }
 
 /* Navbar styles */
+/* Flex container for the navbar, aligning items center and spacing them with padding */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,25 +17,31 @@ body {
     padding: 10px 20px;
 }
 
+/* Style the logo text */
 .logo {
     color: #fff;
     font-size: 1.5em;
 }
 
+/* Flex container for the list of navigation links, removing default list styling */
 .navbar nav ul {
     display: flex;
     list-style: none;
 }
 
+/* Add margin between list items */
 .navbar nav ul li {
     margin: 0 15px;
 }
 
+/* Style the navigation links to be white and remove underline */
 .navbar nav ul li a {
     color: #fff;
     text-decoration: none;
 }
 
+/* Top-Up Button */
+/* Style the top-up button with a background color, white text, no border, padding, and a cursor pointer. Change color on hover */
 #topUpButton {
     background-color: #ff6f61;
     color: white;
@@ -47,6 +55,7 @@ body {
 }
 
 /* Pricing section styles */
+/* Flex container for the pricing cards, centering them with padding and a dark blue background */
 .pricing-section {
     display: flex;
     justify-content: center;
@@ -55,6 +64,7 @@ body {
     background-color: #1c1c3c;
 }
 
+/* Styles for individual pricing cards with background color, white text, rounded corners, box shadow, margin, padding, and centered text */
 .pricing-card {
     background-color: #3c3c7c;
     color: white;
@@ -66,25 +76,30 @@ body {
     width: 300px;
 }
 
+/* Additional styling for the best deal card, with a different background color and border */
 .pricing-card.best-deal {
     background-color: #5c5c9c;
     border: 2px solid #ff6f61;
 }
 
+/* Style the card headers */
 .pricing-card h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
 }
 
+/* Style the price text */
 .pricing-card .price {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
+/* Style the paragraphs */
 .pricing-card p {
     margin-bottom: 20px;
 }
 
+/* Remove list styling, set padding, align text left, and add margin */
 .pricing-card ul {
     list-style: none;
     padding: 0;
@@ -92,6 +107,7 @@ body {
     margin-bottom: 30px;
 }
 
+/* Add margin, padding, and a checkmark before each item */
 .pricing-card ul li {
     margin-bottom: 10px;
     position: relative;
@@ -105,6 +121,8 @@ body {
     color: #ff6f61;
 }
 
+/* Get Plan Button */
+/* Style the "Get Plan" button similarly to the top-up button, with rounded corners and hover effect */
 .get-plan {
     background-color: #ff6f61;
     color: white;
@@ -119,6 +137,7 @@ body {
 }
 
 /* Additional styles for responsiveness */
+/* Adjust layout for screens smaller than 900px, making the pricing section columnar and adjusting card width and margins */
 @media (max-width: 900px) {
     .pricing-section {
         flex-direction: column;
@@ -129,3 +148,4 @@ body {
         width: 80%;
     }
 }
+
