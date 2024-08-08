@@ -58,10 +58,9 @@ app.get('/transaction-history', (req, res) => {
     res.render('transaction-history', { transactions: transactions });
 });
 
-app.get('/subscription-success', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'subscription-success.html'));
+app.get('/subscription-success.html', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'subscription-success.html'));
 });
-
 
 app.get('/create-account', (req, res) => {
     res.render('createaccount');
@@ -92,16 +91,13 @@ app.post('/create-account', (req, res) => {
     });
 });
 
-// Route to render the login page
 app.get('/login', (req, res) => {
     res.render('login');
 });
 
-// Route to handle login form submission
 app.post('/login', (req, res) => {
     const { email, password } = req.body;
 
-    // Fetch the user from the database
     const query = 'SELECT * FROM user WHERE email = ?';
     db.query(query, [email], (err, results) => {
         if (err) {
@@ -115,7 +111,6 @@ app.post('/login', (req, res) => {
 
         const user = results[0];
 
-        // Compare the provided password with the stored hashed password
         bcrypt.compare(password, user.password, (err, isMatch) => {
             if (err) {
                 console.error('Error comparing passwords:', err);
@@ -126,13 +121,11 @@ app.post('/login', (req, res) => {
                 return res.send('Invalid email or password');
             }
 
-            // Successful login
             res.redirect('/home');
         });
     });
 });
 
-// Route to handle Top Up
 app.post('/topup', (req, res) => {
     const amount = parseFloat(req.body.amount);
     if (!isNaN(amount)) {
@@ -142,7 +135,6 @@ app.post('/topup', (req, res) => {
     res.redirect('/wallet');
 });
 
-// Route to handle Transfer
 app.post('/transfer', (req, res) => {
     const amount = parseFloat(req.body.amount);
     if (!isNaN(amount) && balance >= amount) {
@@ -152,7 +144,6 @@ app.post('/transfer', (req, res) => {
     res.redirect('/wallet');
 });
 
-// Route to handle Subscription Purchase
 app.get('/purchase/:plan', (req, res) => {
     const plan = req.params.plan;
     let price;
@@ -175,17 +166,17 @@ app.get('/purchase/:plan', (req, res) => {
     if (balance >= price) {
         balance -= price;
         transactions.push({ type: 'Purchase', plan: plan.charAt(0).toUpperCase() + plan.slice(1), amount: price.toFixed(2), date: new Date().toLocaleString() });
-        res.redirect('/subscription-success');
+        res.redirect('/subscription-success.html');
     } else {
         res.status(400).send('Insufficient funds');
     }
 });
 
-// Start the server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server started on http://localhost:${PORT}`);
 });
+
 
 
 
